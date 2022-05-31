@@ -16,12 +16,11 @@ print(sys.path)
 from main import app
 
 # sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
- 
+
 # Declaring test client
 client = TestClient(app)
-  
+
 # Test for status code for get message
-def test_get_home_url(): 
-  response = client.get("/")
-  assert response.status_code == 200
-                   
+def test_get_home_url():
+    response = client.get("/")
+    assert response.status_code == 200
