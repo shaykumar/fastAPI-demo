@@ -9,7 +9,7 @@ from fastapi.testclient import TestClient
 
 print("In module products sys.path[0], __package__ ==", sys.path[0], __package__)
 
-sys.path.append("/home/ec2-user/fastAPI/")
+sys.path.append("/home/ec2-user/fastAPI-demo/")
 
 print(sys.path)
 
